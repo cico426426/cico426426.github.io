@@ -186,3 +186,18 @@ ul {
     height: 40px;
   }
 }
+.glass-section p {
+    line-height: 1.8; /* You can adjust this value (e.g., 1.7, 1.9, 2.0) to your preference */
+    margin-bottom: 0.8em; /* Adds a bit more space between paragraphs if needed */
+}
+
+/* Also, consider adding some margin to list items for better readability */
+.glass-section ul li {
+    margin-bottom: 0.5em; /* Adjust as needed */
+}
+
+/* To ensure consistent spacing for text inside <h4> in career-item */
+.career-item h4 {
+    margin-top: 1em; /* Add some space above the h4 */
+    margin-bottom: 0.5em; /* Add some space below the h4 */
+}
