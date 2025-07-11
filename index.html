@@ -36,13 +36,14 @@
     </section>
 
     <!-- Work Experience Section -->
-    <section id="experience" class="glass-section">
+    <section id="experience" class="glass-section timeline-section">
         <h2>工作經歷</h2>
-
-        <div class="career-item">
-            <h3>1111 人力銀行 - 資料工程師</h3>
-            <p><strong>2024 年 11 月 – 至今</strong></p>
-            <div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2024 年 11 月 – 至今</div>
+                <div class="timeline-content">
+                    <h3>1111 人力銀行 - 資料工程師</h3>
+                    <div>
                 <h4>自然語言處理與生成式 AI 專案</h4>
                 <ul>
                     <li>
@@ -92,83 +93,81 @@
                 </ul>
             </div>
         </div>
-
-        <div class="career-item">
-            <h3>中央大學 諮商中心網管 (工讀)</h3>
-            <p><strong>2023 年 9 月 – 2024 年 6 月</strong></p>
-            <ul>
-                <li>負責諮商中心網站的日常維護與內容更新。</li>
-                <li>處理網路連線問題及硬體故障排除。</li>
-                <li>支援中心資訊設備管理與資安事件處理。</li>
-            </ul>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2023 年 9 月 – 2024 年 6 月</div>
+                <div class="timeline-content">
+                    <h3>中央大學 諮商中心網管 (工讀)</h3>
+                    <ul>
+                        <li>負責諮商中心網站的日常維護與內容更新。</li>
+                        <li>處理網路連線問題及硬體故障排除。</li>
+                        <li>支援中心資訊設備管理與資安事件處理。</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Project Experience Section -->
+    <!-- Project Experience Section (Carousel) -->
     <section id="projects" class="glass-section">
         <h2>專案經驗</h2>
-
-        <div class="career-item">
-            <h3>AI 智慧旅遊規劃師</h3>
-            <ul>
-                <li>開發基於 Google ADK (Agent Development Kit) 的智慧旅遊規劃應用，能根據使用者需求 (地點、預算、偏好活動、飲食習慣) 自動規劃客製化行程，並提供天氣、景點、餐廳等相關資訊。</li>
-                <li>設計並實作主控 Agent 整合各子 Agent 協作邏輯，並參與開發日期時間處理、串接MCP工具實作天氣查詢、景點推薦及線上搜尋等功能。</li>
-                <li><em>技術應用：Google ADK (Agent Development Kit), LLM。</em></li>
-            </ul>
-        </div>
-
-        <div class="career-item">
-            <h3>Taiwan Weather Forecast MCP Server (FastMCP Server)</h3>
-            <ul>
-                <li>開發 FastMCP server，提供台灣各城市的天氣預報資料，整合中央氣象署 (CWA) API。</li>
-                <li>實現天氣預報、日出日落時間的自然語言摘要功能，並支援可選的時間範圍過濾。</li>
-                <li><em>技術應用：FastMCP, LLM, Central Weather Administration (CWA) API, Python。</em></li>
-            </ul>
-        </div>
-
-        <div class="career-item">
-            <h3>資料科學與機器學習：Click Bait Detect Model</h3>
-            <ul>
-                <li>負責模型設計和撰寫 (Pytorch)與訓練。</li>
-            </ul>
-        </div>
-
-        <div class="career-item">
-            <h3>軟體工程：禮服出租系統</h3>
-            <ul>
-                <li>繪製 Use-case diagram、ER Model。</li>
-                <li>負責後端 API 撰寫 (Django) 及後端開發分配。</li>
-            </ul>
-        </div>
-
-        <div class="career-item">
-            <h3>人工智慧導論：宿舍網管 LINE 聊天機器人</h3>
-            <ul>
-                <li>Rule-Based 設計。</li>
-                <li>負責開發 LINE 聊天機器人 (Flask)。</li>
-            </ul>
-        </div>
-
-        <div class="career-item">
-            <h3>大學專題：Comingo - 旅遊 APP</h3>
-            <ul>
-                <li>負責網路爬蟲、撰寫 Flask API、Android 前端部分頁面撰寫。</li>
-                <li>雲端 MongoDB 架設。</li>
-            </ul>
-        </div>
-
-        <div class="career-item">
-            <h3>軟體分析與設計：飛機訂票系統</h3>
-            <ul>
-                <li>負責會員頁面及後端開發 (Java) 和程式碼整合。</li>
-            </ul>
+        <div class="project-carousel">
+            <div class="project-card">
+                <h3>AI 智慧旅遊規劃師</h3>
+                <ul>
+                    <li>開發基於 Google ADK (Agent Development Kit) 的智慧旅遊規劃應用，能根據使用者需求 (地點、預算、偏好活動、飲食習慣) 自動規劃客製化行程，並提供天氣、景點、餐廳等相關資訊。</li>
+                    <li>設計並實作主控 Agent 整合各子 Agent 協作邏輯，並參與開發日期時間處理、串接MCP工具實作天氣查詢、景點推薦及線上搜尋等功能。</li>
+                    <li><em>技術應用：Google ADK (Agent Development Kit), LLM。</em></li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>Taiwan Weather Forecast MCP Server (FastMCP Server)</h3>
+                <ul>
+                    <li>開發 FastMCP server，提供台灣各城市的天氣預報資料，整合中央氣象署 (CWA) API。</li>
+                    <li>實現天氣預報、日出日落時間的自然語言摘要功能，並支援可選的時間範圍過濾。</li>
+                    <li><em>技術應用：FastMCP, LLM, Central Weather Administration (CWA) API, Python。</em></li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>資料科學與機器學習：Click Bait Detect Model</h3>
+                <ul>
+                    <li>負責模型設計和撰寫 (Pytorch)與訓練。</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>軟體工程：禮服出租系統</h3>
+                <ul>
+                    <li>繪製 Use-case diagram、ER Model。</li>
+                    <li>負責後端 API 撰寫 (Django) 及後端開發分配。</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>人工智慧導論：宿舍網管 LINE 聊天機器人</h3>
+                <ul>
+                    <li>Rule-Based 設計。</li>
+                    <li>負責開發 LINE 聊天機器人 (Flask)。</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>大學專題：Comingo - 旅遊 APP</h3>
+                <ul>
+                    <li>負責網路爬蟲、撰寫 Flask API、Android 前端部分頁面撰寫。</li>
+                    <li>雲端 MongoDB 架設。</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>軟體分析與設計：飛機訂票系統</h3>
+                <ul>
+                    <li>負責會員頁面及後端開發 (Java) 和程式碼整合。</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- Core Skills Section -->
+    <!-- Core Skills Section (Grouped) -->
     <section id="skills" class="glass-section">
         <h2>核心技能</h2>
-        <div>
+        <div class="skills-tag-group">
             <h3>程式語言</h3>
             <div>
                 <span class="tag">Python</span>
@@ -177,14 +176,14 @@
                 <span class="tag">SQL</span>
             </div>
         </div>
-        <div>
+        <div class="skills-tag-group">
             <h3>雲端平台</h3>
             <div>
                 <span class="tag">AWS</span>
                 <span class="tag">GCP</span>
             </div>
         </div>
-        <div>
+        <div class="skills-tag-group">
             <h3>後端框架</h3>
             <div>
                 <span class="tag">Flask</span>
@@ -192,7 +191,7 @@
                 <span class="tag">FastAPI</span>
             </div>
         </div>
-        <div>
+        <div class="skills-tag-group">
             <h3>資料庫</h3>
             <div>
                 <span class="tag">PostgreSQL</span>
@@ -200,7 +199,7 @@
                 <span class="tag">MongoDB</span>
             </div>
         </div>
-        <div>
+        <div class="skills-tag-group">
             <h3>AI/ML 相關</h3>
             <div>
                 <span class="tag">Transformer</span>
@@ -210,7 +209,7 @@
                 <span class="tag">Pytorch</span>
             </div>
         </div>
-        <div>
+        <div class="skills-tag-group">
             <h3>框架與函式庫</h3>
             <div>
                 <span class="tag">SQLAlchemy</span>
@@ -221,7 +220,7 @@
                 <span class="tag">FastMCP</span>
             </div>
         </div>
-        <div>
+        <div class="skills-tag-group">
             <h3>自動化與部署</h3>
             <div>
                 <span class="tag">Github Action</span>
@@ -229,7 +228,7 @@
                 <span class="tag">Terraform</span>
             </div>
         </div>
-        <div>
+        <div class="skills-tag-group">
             <h3>其他工具與技術</h3>
             <div>
                 <span class="tag">網頁爬蟲</span>
@@ -241,41 +240,37 @@
     </section>
 
     <!-- Education Background Section -->
-    <section id="education" class="glass-section">
+    <section id="education" class="glass-section timeline-section">
         <h2>教育背景</h2>
-
-        <div class="career-item">
-            <div class="edu-link">
-                <div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2022 年 9 月 – 2024 年 7 月</div>
+                <div class="timeline-content">
                     <h3>國立中央大學 - 資訊管理所 碩士</h3>
-                    <p><strong>2022 年 9 月 – 2024 年 7 月</strong></p>
+                    <ul>
+                        <li>
+                            <p><strong>相關課程：資料科學與機器學習</strong></p>
+                            <p>專注於透過機器學習與深度學習進行資料分析，處理多樣資料集，應用視覺化，審閱學術文獻，並進行統計驗證實驗。</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <ul>
-                <li>
-                    <p><strong>相關課程：資料科學與機器學習</strong></p>
-                    <p>專注於透過機器學習與深度學習進行資料分析，處理多樣資料集，應用視覺化，審閱學術文獻，並進行統計驗證實驗。</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="career-item">
-            <div class="edu-link">
-                <div>
+            <div class="timeline-item">
+                <div class="timeline-date">2018 年 9 月 – 2022 年 7 月</div>
+                <div class="timeline-content">
                     <h3>國立中央大學 - 資訊管理系 學士</h3>
-                    <p><strong>2018 年 9 月 – 2022 年 7 月</strong></p>
+                    <ul>
+                        <li>
+                            <p><strong>相關課程：電子商務技術</strong></p>
+                            <p>課程重點在於資料探勘作為關鍵的電子商務技術。透過 Weka 軟體獲得實作經驗，理解資料分析、演算法方法、機器學習應用及其在電子商務中的實際意義。</p>
+                        </li>
+                        <li>
+                            <p><strong>相關課程：物件導向分析與設計</strong></p>
+                            <p>此課程著重於軟體工程的核心和物件導向技術的重要性。</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <ul>
-                <li>
-                    <p><strong>相關課程：電子商務技術</strong></p>
-                    <p>課程重點在於資料探勘作為關鍵的電子商務技術。透過 Weka 軟體獲得實作經驗，理解資料分析、演算法方法、機器學習應用及其在電子商務中的實際意義。</p>
-                </li>
-                <li>
-                    <p><strong>相關課程：物件導向分析與設計</strong></p>
-                    <p>此課程著重於軟體工程的核心和物件導向技術的重要性。</p>
-                </li>
-            </ul>
         </div>
     </section>
 
@@ -321,23 +316,69 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Typing effect for header
             const typingText = document.querySelector('.typing-text');
             const text = 'Data Engineer';
             let index = 0;
-            
-            // Clear the text first
             typingText.textContent = '';
-            
             function typeWriter() {
                 if (index < text.length) {
                     typingText.textContent += text.charAt(index);
                     index++;
-                    setTimeout(typeWriter, 150); // Adjust speed here (milliseconds)
+                    setTimeout(typeWriter, 150);
                 }
             }
-            
-            // Start typing after a delay
             setTimeout(typeWriter, 1500);
+
+            // Project carousel auto-scroll (修正版)
+            const carousel = document.querySelector('.project-carousel');
+            let autoScroll = true;
+            let scrollInterval = null;
+            let scrollDelay = 3500; // ms
+
+            function scrollToCard(index) {
+                const cards = carousel.querySelectorAll('.project-card');
+                if (!cards.length) return;
+                const cardWidth = cards[0].offsetWidth;
+                const gap = parseInt(getComputedStyle(carousel).gap) || 24;
+                const scrollLeft = index * (cardWidth + gap);
+                carousel.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+            }
+
+            let currentCard = 0;
+            function startAutoScroll() {
+                if (scrollInterval) clearInterval(scrollInterval);
+                const cards = carousel.querySelectorAll('.project-card');
+                scrollInterval = setInterval(() => {
+                    if (!autoScroll || !cards.length) return;
+                    currentCard = (currentCard + 1) % cards.length;
+                    scrollToCard(currentCard);
+                }, scrollDelay);
+            }
+
+            // 暫停自動滑動（滑鼠移入/觸控）
+            carousel.addEventListener('mouseenter', () => { autoScroll = false; });
+            carousel.addEventListener('mouseleave', () => { autoScroll = true; });
+            carousel.addEventListener('touchstart', () => { autoScroll = false; });
+            carousel.addEventListener('touchend', () => { autoScroll = true; });
+
+            startAutoScroll();
+
+            // 若有手動滑動，暫停自動滑動一段時間，並同步 currentCard
+            let manualScrollTimeout = null;
+            carousel.addEventListener('scroll', () => {
+                autoScroll = false;
+                if (manualScrollTimeout) clearTimeout(manualScrollTimeout);
+                // 計算目前最接近的卡片 index
+                const cards = carousel.querySelectorAll('.project-card');
+                if (cards.length) {
+                    const cardWidth = cards[0].offsetWidth;
+                    const gap = parseInt(getComputedStyle(carousel).gap) || 24;
+                    const idx = Math.round(carousel.scrollLeft / (cardWidth + gap));
+                    currentCard = Math.max(0, Math.min(idx, cards.length - 1));
+                }
+                manualScrollTimeout = setTimeout(() => { autoScroll = true; }, 4000);
+            });
         });
     </script>
 </body>
