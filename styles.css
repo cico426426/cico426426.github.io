@@ -185,10 +185,100 @@ ul {
     width: 40px;
     height: 40px;
   }
+
+  .project-card {
+    min-width: 85vw;
+    max-width: 90vw;
+    padding: 1.2rem 0.7rem;
+  }
 }
 .glass-section p {
     line-height: 1.8; /* You can adjust this value (e.g., 1.7, 1.9, 2.0) to your preference */
     margin-bottom: 0.8em; /* Adds a bit more space between paragraphs if needed */
+}
+
+/* Carousel Hint */
+.carousel-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    background: rgba(95, 158, 160, 0.13);
+    color: #2c3e50;
+    border-radius: 2em;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    padding: 0.4em 1.2em;
+    font-size: 1.05rem;
+    font-weight: 500;
+    width: fit-content;
+    margin: 0 auto 1.2em auto;
+    position: relative;
+    z-index: 2;
+    animation: fadeInHint 1.2s;
+    user-select: none;
+}
+@keyframes fadeInHint {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+.hint-icon {
+    font-size: 1.2em;
+    opacity: 0.7;
+}
+.hint-text {
+    letter-spacing: 0.05em;
+    opacity: 0.85;
+}
+
+/* Project Carousel */
+.project-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.5rem;
+    margin-bottom: -1rem;
+    scrollbar-width: none; /* Firefox */
+}
+.project-carousel::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+.project-card {
+    min-width: 320px;
+    max-width: 340px;
+    flex: 0 0 auto;
+    background: rgba(232, 244, 248, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12);
+    border: 1px solid rgba(95, 158, 160, 0.18);
+    padding: 1.5rem 1.2rem;
+    scroll-snap-align: start;
+    transition: transform 0.2s;
+}
+.project-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+}
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    color: #2c3e50;
+}
+.project-card ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+}
+.project-card li {
+    margin-bottom: 0.5em;
+    font-size: 0.98rem;
+}
+
+/* Skills Tag Group */
+.skills-tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-top: 1.2rem;
 }
 
 /* Also, consider adding some margin to list items for better readability */
@@ -200,4 +290,119 @@ ul {
 .career-item h4 {
     margin-top: 1em; /* Add some space above the h4 */
     margin-bottom: 0.5em; /* Add some space below the h4 */
+}
+
+/* ===== Timeline Section Styles ===== */
+.timeline-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-left: 2.5rem;
+  border-left: 3px solid #5f9ea0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 3.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-date {
+  position: relative;
+  left: 0;
+  top: 0;
+  min-width: 110px;
+  color: #5f9ea0;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-align: left;
+  white-space: nowrap;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.7rem;
+  top: 0.5rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #e8f4f8;
+  border: 3px solid #5f9ea0;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(95,158,160,0.08);
+}
+
+.timeline-content {
+  background: rgba(232, 244, 248, 0.95);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin-left: 1.5rem;
+  margin-top: 0.2rem;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+  border: 1px solid rgba(95, 158, 160, 0.13);
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  color: #2c3e50;
+  font-size: 1.15rem;
+}
+
+.timeline-content ul {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-left-width: 2px;
+  }
+  .timeline-date {
+    font-size: 0.98rem;
+    margin-bottom: 0.3rem;
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    min-height: 2.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+  .timeline-item::before {
+    left: -1.1rem;
+    top: 0.2rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-width: 2px;
+  }
+  .timeline-content {
+    margin-left: 0.7rem;
+    padding: 1rem 1rem;
+    margin-top: 0.2rem;
+  }
 }
